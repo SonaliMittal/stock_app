@@ -1,0 +1,41 @@
+    <form (ngSubmit)="onRegister()" #f="ngForm" [formGroup]="registerForm">
+      
+        <!-- <label for="firstName">firstName : </label> -->
+
+        <p>
+            <input type="text" placeholder="FirstName" class="form-control" name="firstName">
+        </p>
+  
+
+        <p>
+            <input placeholder="LastName" type="text" [formControl]="lastName" class="form-control" name="lastName">
+        </p>
+
+        <p>
+
+            <input  style="padding: 15px;" placeholder="Email" type="email" [formControl]="username" class="form-control" name="username">
+
+        </p>
+
+        <p>
+
+            <input placeholder="Password" type="password" class="form-control" [formControl]="password" name="password">
+
+        </p>
+
+        <p>
+
+            <input type="password"  placeholder="Confirm Password" class="form-control" [formControl]="cnfpassword" name="cnfpassword">
+
+        </p>
+
+        <div>
+            <button type="submit" mat-stroked-button color="accent" class="btn btn-success btn-block">Register</button>
+          </div>
+  
+        </form>
+<div>
+                <span class="content-spacer"></span>
+    <button  mat-button color="accent"><a style="color: limegreen"   [routerLink]="['/login']"> Login</a></button>
+</div>
+        

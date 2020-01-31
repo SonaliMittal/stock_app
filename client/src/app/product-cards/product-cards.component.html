@@ -1,0 +1,49 @@
+<div style="padding: 20px;margin:10px">
+  <app-product style="display: none"></app-product>
+
+
+  <div *ngIf="selectedProducts" style="display:inline-block">
+
+    <mat-card style="display: inline-block;padding: 10px;margin: 20px" class="example-card" *ngFor="let product of selectedProducts">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{product.productName}}</mat-card-title>
+        <mat-card-subtitle style="color: seagreen">{{product.price | currency:'USD'}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image style="height: 200px;width: 200px" [src]="product.link" alt="Your selected cards">
+      <mat-card-content>
+        <div>
+          <span style="color: red">Items left: {{product.stock}}</span>
+        </div>
+        <div>
+          {{product.description}}
+        </div>
+        <div>
+
+          <form>
+            <div class="value-button"  (click)="decreaseValue(product)" value="Decrease Value">-</div>
+            <input type="number" [value]="product.totalItems" value="0" />
+            <div class="value-button" (click)="increaseValue(product)" value="Increase Value">+</div>
+          </form>
+        </div>
+      </mat-card-content>
+      <!-- <mat-card-actions>
+      </mat-card-actions> -->
+    </mat-card>
+
+    <div style="display: inline; ">
+            <button style="float:right;" mat-stroked-button color="accent" (click)="buyProduct()">Sell Now</button>
+    </div>
+
+  </div>
+  <div *ngIf="!selectedProducts" style="align-items: center;text-align: center;z-index: -1;">
+
+
+    <span style="font-size: medium;font-weight: bold">There are no selected products</span>
+    <div style="padding-top: 10px">
+
+      <button mat-button><a [routerLink]="['/products']"><span style="text-decoration-line: none">Select Products</span>
+        </a></button>
+    </div>
+  </div>
+</div>

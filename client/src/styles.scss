@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ag-grid-community/all-modules/dist/styles/ag-grid.css";
+@import "~@ag-grid-community/all-modules/dist/styles/ag-theme-balham.css";
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background: #384047;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 10px;
+}
+
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+  
+
+  // form {
+  //   width: 300px;
+  //   margin: 0 auto;
+  //   text-align: center;
+  //   padding-top: 50px;
+  // }
+  
+  // .value-button {
+  //   display: inline-block;
+  //   border: 1px solid #ddd;
+  //   margin: 0px;
+  //   width: 40px;
+  //   height: 20px;
+  //   text-align: center;
+  //   vertical-align: middle;
+  //   padding: 11px 0;
+  //   background: #eee;
+  //   -webkit-touch-callout: none;
+  //   -webkit-user-select: none;
+  //   -khtml-user-select: none;
+  //   -moz-user-select: none;
+  //   -ms-user-select: none;
+  //   user-select: none;
+  // }
+  
+  // .value-button:hover {
+  //   cursor: pointer;
+  // }
+  
+  // form #decrease {
+  //   margin-right: -4px;
+  //   border-radius: 8px 0 0 8px;
+  // }
+  
+  // form #increase {
+  //   margin-left: -4px;
+  //   border-radius: 0 8px 8px 0;
+  // }
+  
+  // form #input-wrap {
+  //   margin: 0px;
+  //   padding: 0px;
+  // }
+  
+  // input#number {
+  //   text-align: center;
+  //   border: none;
+  //   border-top: 1px solid #ddd;
+  //   border-bottom: 1px solid #ddd;
+  //   margin: 0px;
+  //   width: 40px;
+  //   height: 40px;
+  // }
+  
+  // input[type=number]::-webkit-inner-spin-button,
+  // input[type=number]::-webkit-outer-spin-button {
+  //     -webkit-appearance: none;
+  //     margin: 0;
+  // }
+
+  .content{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px
+  }
+  .web-kit-center{
+    text-align: -webkit-center;
+  }
+
+  .tool-item {
+    padding: 0 10px;
+  }
+  
+  .content-spacer {
+    flex: 1 1 auto;
+  }

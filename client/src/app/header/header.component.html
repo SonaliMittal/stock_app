@@ -1,0 +1,14 @@
+<mat-toolbar style="background-color: slateblue"color="primary">
+  <mat-toolbar-row>
+      <span class="content-spacer"></span>
+
+    <div *ngIf="isLoggedIn" style="align-items:right;text-align: end">
+
+        <span class="tool-item" ><a [routerLink]="['/products']">Products</a></span>
+        <span class="tool-item" style="margin: 10px;"><a [routerLink]="['/portfolio']">Portfolio</a></span>
+        <span class="tool-item" style="margin: 10px;"><a [routerLink]="['/product-cards']">My Products</a></span>
+        <span class="tool-item" style="margin: 10px;"><a [routerLink]="['/login']">Logout</a></span>
+
+</div>
+  </mat-toolbar-row>
+</mat-toolbar>

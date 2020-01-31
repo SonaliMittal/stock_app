@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<div class="content web-kit-center">
+
+        <ag-grid-angular #agG
+        style="width: 800px; height:400px ;" 
+        class="ag-theme-balham"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs"
+        [modules]="modules"
+        rowSelection="multiple"
+        >
+    
+    
+    </ag-grid-angular>
+    
+    <div style="
+     margin-top: 10px;
+    padding: 10px;">
+
+            <button  style="float:right" mat-flat-button color="warn" (click)="getSelectedRows()">Lock</button>
+
+    </div>
+    
+    
+
+
+</div>
+
