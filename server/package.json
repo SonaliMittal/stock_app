@@ -11,8 +11,10 @@
     "express": "^4.17.1",
     "helmet": "^3.21.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.12"
+    "mongoose": "^5.7.12",
+    "typescript": "~2.3.3"
   },
+  
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/SonaliMittal/stock_app/issues"
   },
-  "homepage": "https://github.com/SonaliMittal/stock_app#readme"
+  "homepage": "https://github.com/SonaliMittal/stock_app#readme",
+  "devDependencies": {
+    "@angular/cli": "^8.3.24",
+    "@angular/compiler-cli": "^8.2.14",
+    "enhanced-resolve": "^3.3.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
 }
